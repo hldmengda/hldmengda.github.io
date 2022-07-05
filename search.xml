@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>biu播放器改老接口适用新版本教程</title>
+    <url>/2022/07/05/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>1.0.3优化版本，重点优化电视盒子端的兼容性问题，开发者说了只要不是太旧的盒子现在基本都可以正常使用了。</p>
+<p>新增加了检测解析跳出舞蹈的视频会自动切换到下一个解析。现在不会再出现一些乱七八糟的视频了，使用体验更好！</p>
+<p>还有现在直播模块可以直接读取常规的这种格式的直播源了：</p>
+<p>XX频道,#genre#</p>
+<p>另外说一下老的全局接口如何快速改造成新版接口：</p>
+<p><img src="/../images/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/640.png" alt="图片"></p>
+<p>把上图旧接口的这个Home字段的地方，</p>
+<p>替换成下方新版的Home字段就ok了！注意替换要完整，不要少了,号或者多了,啥的。</p>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;Home&quot;: [</span><br><span class="line">&#123;&quot;key&quot;:&quot;APP&quot;,&quot;title&quot;:&quot;APP调试&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;网页&quot;,&quot;title&quot;:&quot;网页调试&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;采集&quot;,&quot;title&quot;:&quot;采集调试&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;直播&quot;,&quot;title&quot;:&quot;直播调试&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;历史&quot;,&quot;title&quot;:&quot;历史记录&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;收藏&quot;,&quot;title&quot;:&quot;我的收藏&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;推送&quot;,&quot;title&quot;:&quot;远程推送&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;,</span><br><span class="line">&#123;&quot;key&quot;:&quot;待添加&quot;,&quot;title&quot;:&quot;待添加&quot;,&quot;pic&quot;:&quot;https://epg.112114.xyz/bingimg&quot;&#125;],</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>同理，把主解析和备用解析也替换一下成新版的字段格式就可以了。</p>
+<p>如果只是用网页自定义的话，就只替换Home字段就可以了，最好3个地方都替换一下。这样新接口就完全改造完成了。</p>
+<p>主解析：替换成下方格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;zhujiexi&quot;:[</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析1&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析2&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析3&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;],</span><br></pre></td></tr></table></figure>
+
+
+
+<p>备用解析：替换成下方格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;beiyongjiexi&quot;: [</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析1&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析2&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析3&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;],</span><br></pre></td></tr></table></figure>
+
+
+
+<p>如果想在设置界面自己编辑填写解析的话</p>
+<p>就用下方格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[&#123;&quot;name&quot;:&quot;解析1&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析2&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析3&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;]</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>接口</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/06/30/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
