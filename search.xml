@@ -32,6 +32,9 @@
 <p>如果想在设置界面自己编辑填写解析的话</p>
 <p>就用下方格式</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[&#123;&quot;name&quot;:&quot;解析1&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析2&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;,</span><br><span class="line">&#123;&quot;name&quot;:&quot;解析3&quot;,&quot;url&quot;:&quot;www.xxx.url=&quot;&#125;]</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
         <category>教程</category>
@@ -65,5 +68,40 @@
     <content><![CDATA[<p>第一次建博客，弄了几天终于成功啦！</p>
 <p><img src="/../images/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/999-16566678391531.png"></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>阿里云网盘token的提取和注入jar教程</title>
+    <url>/2022/07/05/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>阿里云网页版地址：<a href="https://www.aliyundrive.com/sign/in">https://www.aliyundrive.com/sign/in</a></p>
+<p>用电脑操作复制地址打开登录</p>
+<p>按F12就出现下面的图了</p>
+<p>图小的自己用鼠标拉伸一下</p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640.png" alt="img"></p>
+<span id="more"></span>
+
+<p>按图找到你的token</p>
+<p>token自己保管好相当于你家的钥匙</p>
+<p>然后新建一个文本这个token码放到文本里</p>
+<p>上传到你的外链、本地服务器、服务器、github等等</p>
+<p>外链上传时最好加密一下，避免盗取</p>
+<p>最后生成一个连接</p>
+<p>转战手机</p>
+<p>用MT管理器打开你失效的jar文件</p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628281.png" alt="img"></p>
+<p><strong>用第一个打开方式打开classes.dex</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628292.jpeg" alt="img"></p>
+<p><strong>然后点搜索 搜索自己</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628303.jpeg" alt="img"></p>
+<p><strong>点开搜到的结果</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628304.jpeg" alt="img"></p>
+<p><strong>把刚才自己弄得token连接放到这里就可以用了</strong></p>
+<p>**<br>**</p>
+<p><strong>教程结束</strong></p>
+<p>**<br>**</p>
+<p><strong>哪里不懂及时沟通</strong></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
   </entry>
 </search>
