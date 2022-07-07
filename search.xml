@@ -146,12 +146,65 @@
 
 
 
-<h2 id="如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数"><a href="#如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数" class="headerlink" title="如上设置,使用hexo s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数"></a>如上设置,使用<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数</h2>]]></content>
+<h2 id="如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数"><a href="#如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数" class="headerlink" title="如上设置,使用hexo s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数"></a>如上设置,使用<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数</h2><h3 id="hexo博客侧边栏增加微信公众号二维码"><a href="#hexo博客侧边栏增加微信公众号二维码" class="headerlink" title="hexo博客侧边栏增加微信公众号二维码"></a>hexo博客侧边栏增加微信公众号二维码</h3><p>2.1 获取微信公众号二维码图片<br>从公众号管理后台获取公众号二维码图片，如下图所示。将选中的图片放入博客根目录下的.&#x2F;themes&#x2F;next&#x2F;source&#x2F;images&#x2F;目录中，并将图片改名为wechat_channel.png，注意不是放在public&#x2F;images&#x2F;目录。</p>
+<p>2.2 设置next主题侧边栏文件</p>
+<p>编辑themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;sidebar.swig 文件，在里面搜索theme.back2top.enable，在这个if语句之前添加下面的代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;wechat_channel&quot;&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;!-- 这里添加你的二维码图片 --&gt;</span><br><span class="line">        &lt;img src =&quot;/images/wechat_channel.png&quot;&gt;</span><br><span class="line">        &lt;!-- &lt;span&gt;公众号&lt;/span&gt; --&gt;</span><br><span class="line">      &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如下图所示，</p>
+<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/v2-0103c18a258491c4679aa1d860085624_r.jpg"></p>
+<h3 id="hexo博客文章底部增加微信公众号二维码"><a href="#hexo博客文章底部增加微信公众号二维码" class="headerlink" title="hexo博客文章底部增加微信公众号二维码"></a>hexo博客文章底部增加微信公众号二维码</h3><p>3.1 获取微信公众号二维码图片</p>
+<p>同2.1所示。</p>
+<p>3.2 设置next主题文章底部</p>
+<p>编辑themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;post&#x2F;post-copyright.swig文件，在底部的</div>上面增加下述代码，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;wechat_channel&quot;&gt;</span><br><span class="line">  &lt;br&gt;</span><br><span class="line">  &lt;!-- 这里添加你的二维码图片 --&gt;</span><br><span class="line">  &lt;img src =&quot;/images/wechat_channel.png&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如下图所示</p>
+<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/v2-ba380d939e67c84b5870e85491797a03_720w.jpg"></p>
+<p>首先尝试了CodeHeap 的文章<a href="https://jrbcode.gitee.io/posts/be9758cd.html">Hexo+NexT博客归档&#x2F;标签&#x2F;分类页美化</a>,对分类栏进行了优化。发现只是增加了效果</p>
+<p>然后修改 &#x2F;themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_common&#x2F;components&#x2F;pages&#x2F;categories.styl 代码,将 .category-list-child 的 padding-left 属性10px改为 60px。</p>
+]]></content>
       <categories>
         <category>教程</category>
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>影视软件推荐</title>
+    <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th><a href="hldmengda.github.io">火龙果</a></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>软件</category>
+        <category>安卓影视</category>
+      </categories>
+      <tags>
+        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
