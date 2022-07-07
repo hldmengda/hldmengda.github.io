@@ -1,72 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo next主题美化闭坑教程</title>
-    <url>/2022/07/06/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="修改文章底部带-号的标签"><a href="#修改文章底部带-号的标签" class="headerlink" title="修改文章底部带#号的标签"></a>修改文章底部带#号的标签</h2><p>将 # 换成标签图标。<br>[NexT 7.1.0 Released]修改方法为：<br>打开模板&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig，搜索 rel&#x3D;”tag”，进行如下修改：</p>
-<p>修改前</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">            &#123;%- for tag in post.tags.toArray() %&#125;</span><br><span class="line">              &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&#123;&#123; tag_indicate &#125;&#125; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">            &#123;%- endfor %&#125;</span><br><span class="line">          &lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-
-
-
-
-<p>修改后</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">          &#123;% for tag in post.tags %&#125;</span><br><span class="line">            &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">          &#123;% endfor %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="页面阅读统计"><a href="#页面阅读统计" class="headerlink" title="页面阅读统计"></a>页面阅读统计</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span>      <span class="comment"># 页面阅读统计</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>    <span class="comment">#设true 开启</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span>     <span class="comment">#总阅读人数 uv数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span>  <span class="comment">#阅读总人数的图标</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span>  <span class="comment">#总阅读次数 pv数</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span>  <span class="comment">#阅读总次数的图标</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#开启内容阅读次数</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span> <span class="comment">#内容页阅读数的图标</span></span><br></pre></td></tr></table></figure>
-
-<p>给hexo博客添加fancybox图片灯箱功能</p>
-<p>首先安装依赖：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox</span><br></pre></td></tr></table></figure>
-
-<p>安装后打开<code>主题配置</code>文件，找到<code>fancybox</code></p>
-<p>fancybox: true</p>
-<p>完毕</p>
-<h1 id="添加站点访问人数和总访问量"><a href="#添加站点访问人数和总访问量" class="headerlink" title="添加站点访问人数和总访问量"></a>添加站点访问人数和总访问量</h1><p>修改next主题配置文件，搜索<strong>busuanzi_count</strong></p>
-<p>busuanzi_count:<br>  enable: true<br>  total_visitors: true<br>  total_visitors_icon: user<br>  total_views: true<br>  total_views_icon: eye<br>  post_views: true<br>  post_views_icon: eye</p>
-<h2 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h2><ul>
-<li>找到CSS存放位置：</li>
-</ul>
-<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/image-20200712232432523.png"></p>
-<p>新建 <code>_other.styl</code> 文件，用来存放自己后面添加的CSS样式</p>
-<ul>
-<li>打开主要CSS文件 <code>main.styl</code> ，引入<code>_other.styl</code> CSS样式文件，添加如下代码：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//个人添加</span><br><span class="line">@import &quot;_other.styl&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/image-20200712232805384.png"></p>
-<p>插入博客背景的CSS样式到<code>_other.styl</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//背景图片</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://pic.heson10.com/img/image-20200712231958010.png);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>代码中url的链接就是你想要替换的博客背景图片链接，建议上传到图床，然后粘贴上去</p>
-<h2 id="设置所有边框为圆角"><a href="#设置所有边框为圆角" class="headerlink" title="设置所有边框为圆角"></a>设置所有边框为圆角</h2><p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
-<p>ps：Gemini是我用的样式，用哪个样式修改哪个文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">$border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">$border-radius = 15px;</span><br></pre></td></tr></table></figure>
-
-<p>给hexo博客添加fancybox图片灯箱功能</p>
-<p>首先安装依赖：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox</span><br></pre></td></tr></table></figure>
-
-<p>安装后打开<code>主题配置</code>文件，找到<code>fancybox</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
-
-<p>完毕！</p>
-<h1 id="hexo博客如何隐藏或者自定义图片名"><a href="#hexo博客如何隐藏或者自定义图片名" class="headerlink" title="hexo博客如何隐藏或者自定义图片名"></a>hexo博客如何隐藏或者自定义图片名</h1><p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/20200828161244956.png"></p>
-<p>开头会有一个[*****]，这个方括号里面填写的是默认的图片名称。如果你不修改的话，显示就是下面这样</p>
-<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTkwMDkx,size_16,color_FFFFFF,t_70.png"></p>
-<p>如果你想隐藏图片名，直接把方括号里面的内容删去即可，或者你想自定义图片名，修改方括号内部文字即可。</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>TVBox播放器内置接口教程</title>
     <url>/2022/07/06/TVBox%E6%92%AD%E6%94%BE%E5%99%A8%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>手机打开MT管理器</p>
@@ -144,6 +78,80 @@
       </categories>
       <tags>
         <tag>接口</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo next主题美化闭坑教程</title>
+    <url>/2022/07/06/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="修改文章底部带-号的标签"><a href="#修改文章底部带-号的标签" class="headerlink" title="修改文章底部带#号的标签"></a>修改文章底部带#号的标签</h2><p>将 # 换成标签图标。<br>[NexT 7.1.0 Released]修改方法为：<br>打开模板&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig，搜索 rel&#x3D;”tag”，进行如下修改：</p>
+<p>修改前</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">            &#123;%- for tag in post.tags.toArray() %&#125;</span><br><span class="line">              &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&#123;&#123; tag_indicate &#125;&#125; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">            &#123;%- endfor %&#125;</span><br><span class="line">          &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+
+
+
+
+<p>修改后</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">          &#123;% for tag in post.tags %&#125;</span><br><span class="line">            &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">          &#123;% endfor %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="页面阅读统计"><a href="#页面阅读统计" class="headerlink" title="页面阅读统计"></a>页面阅读统计</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span>      <span class="comment"># 页面阅读统计</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>    <span class="comment">#设true 开启</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span>     <span class="comment">#总阅读人数 uv数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span>  <span class="comment">#阅读总人数的图标</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span>  <span class="comment">#总阅读次数 pv数</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span>  <span class="comment">#阅读总次数的图标</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#开启内容阅读次数</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span> <span class="comment">#内容页阅读数的图标</span></span><br></pre></td></tr></table></figure>
+
+<p>给hexo博客添加fancybox图片灯箱功能</p>
+<p>首先安装依赖：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox</span><br></pre></td></tr></table></figure>
+
+<p>安装后打开<code>主题配置</code>文件，找到<code>fancybox</code></p>
+<p>fancybox: true</p>
+<p>完毕</p>
+<h1 id="添加站点访问人数和总访问量"><a href="#添加站点访问人数和总访问量" class="headerlink" title="添加站点访问人数和总访问量"></a>添加站点访问人数和总访问量</h1><p>修改next主题配置文件，搜索<strong>busuanzi_count</strong></p>
+<p>busuanzi_count:<br>  enable: true<br>  total_visitors: true<br>  total_visitors_icon: user<br>  total_views: true<br>  total_views_icon: eye<br>  post_views: true<br>  post_views_icon: eye</p>
+<h2 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h2><ul>
+<li>找到CSS存放位置：</li>
+</ul>
+<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/image-20200712232432523.png"></p>
+<p>新建 <code>_other.styl</code> 文件，用来存放自己后面添加的CSS样式</p>
+<ul>
+<li>打开主要CSS文件 <code>main.styl</code> ，引入<code>_other.styl</code> CSS样式文件，添加如下代码：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//个人添加</span><br><span class="line">@import &quot;_other.styl&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/image-20200712232805384.png"></p>
+<p>插入博客背景的CSS样式到<code>_other.styl</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//背景图片</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://pic.heson10.com/img/image-20200712231958010.png);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码中url的链接就是你想要替换的博客背景图片链接，建议上传到图床，然后粘贴上去</p>
+<h2 id="设置所有边框为圆角"><a href="#设置所有边框为圆角" class="headerlink" title="设置所有边框为圆角"></a>设置所有边框为圆角</h2><p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
+<p>ps：Gemini是我用的样式，用哪个样式修改哪个文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">$border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">$border-radius = 15px;</span><br></pre></td></tr></table></figure>
+
+<p><strong>给hexo博客添加fancybox图片灯箱功能</strong></p>
+<p>首先安装依赖：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-fancybox3 themes/next/source/lib/fancybox</span><br></pre></td></tr></table></figure>
+
+<p>安装后打开<code>主题配置</code>文件，找到<code>fancybox</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
+
+<p>完毕！</p>
+<h1 id="hexo博客如何隐藏或者自定义图片名"><a href="#hexo博客如何隐藏或者自定义图片名" class="headerlink" title="hexo博客如何隐藏或者自定义图片名"></a>hexo博客如何隐藏或者自定义图片名</h1><p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/20200828161244956.png"></p>
+<p>开头会有一个[*****]，这个方括号里面填写的是默认的图片名称。如果你不修改的话，显示就是下面这样</p>
+<p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTkwMDkx,size_16,color_FFFFFF,t_70.png"></p>
+<p>如果你想隐藏图片名，直接把方括号里面的内容删去即可，或者你想自定义图片名，修改方括号内部文字即可。</p>
+<h1 id="hexo框架next主题统计访问人数"><a href="#hexo框架next主题统计访问人数" class="headerlink" title="hexo框架next主题统计访问人数"></a>hexo框架next主题统计访问人数</h1><h2 id="网络有很多博客的统计方法-最方便的就是不蒜子-next主题的较高级的版本内置不蒜子"><a href="#网络有很多博客的统计方法-最方便的就是不蒜子-next主题的较高级的版本内置不蒜子" class="headerlink" title="网络有很多博客的统计方法 最方便的就是不蒜子 next主题的较高级的版本内置不蒜子"></a>网络有很多博客的统计方法 最方便的就是不蒜子 next主题的较高级的版本内置不蒜子</h2><p>打开主题配置文件,路径如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">themes\next\_config.yml</span><br><span class="line">#主题配置文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>搜索busuanzi或者找到它,大概在代码720行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数"><a href="#如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数" class="headerlink" title="如上设置,使用hexo s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数"></a>如上设置,使用<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数</h2>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
