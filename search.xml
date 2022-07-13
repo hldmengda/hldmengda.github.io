@@ -3,7 +3,16 @@
   <entry>
     <title>2022年7月每日分享</title>
     <url>/2022/07/13/2022%E5%B9%B47%E6%9C%88%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>可以收藏「大师兄资源网」<a href="https://hldmengda.github.io/">https://hldmengda.github.io/</a></p>
+<p><strong>关于大师兄每日分享栏目</strong></p>
+<p>发现一些不错的资源，你有好的发现或者建议点击<a href="https://hldmengda.github.io/messagebord/" title="这里">这里</a>快速反馈</p>
+]]></content>
+      <categories>
+        <category>每日分享</category>
+      </categories>
+      <tags>
+        <tag>神器</tag>
+      </tags>
   </entry>
   <entry>
     <title>TVBox播放器内置接口教程</title>
@@ -88,7 +97,7 @@
   <entry>
     <title>hexo next主题美化闭坑教程</title>
     <url>/2022/07/06/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="修改文章底部带-号的标签"><a href="#修改文章底部带-号的标签" class="headerlink" title="修改文章底部带#号的标签"></a>修改文章底部带#号的标签</h2><p>将 # 换成标签图标。<br>[NexT 7.1.0 Released]修改方法为：<br>打开模板&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig，搜索 rel&#x3D;”tag”，进行如下修改：</p>
+    <content><![CDATA[<h2 id="1修改文章底部带-号的标签"><a href="#1修改文章底部带-号的标签" class="headerlink" title="1修改文章底部带#号的标签"></a>1修改文章底部带#号的标签</h2><p>将 # 换成标签图标。<br>[NexT 7.1.0 Released]修改方法为：<br>打开模板&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig，搜索 rel&#x3D;”tag”，进行如下修改：</p>
 <p>修改前</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">            &#123;%- for tag in post.tags.toArray() %&#125;</span><br><span class="line">              &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&#123;&#123; tag_indicate &#125;&#125; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">            &#123;%- endfor %&#125;</span><br><span class="line">          &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
@@ -101,7 +110,7 @@
 <p>修改后</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">          &#123;% for tag in post.tags.toArray() %&#125;</span><br><span class="line">            &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">          &#123;% endfor %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="页面阅读统计"><a href="#页面阅读统计" class="headerlink" title="页面阅读统计"></a>页面阅读统计</h3><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span>      <span class="comment"># 页面阅读统计</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>    <span class="comment">#设true 开启</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span>     <span class="comment">#总阅读人数 uv数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span>  <span class="comment">#阅读总人数的图标</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span>  <span class="comment">#总阅读次数 pv数</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span>  <span class="comment">#阅读总次数的图标</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#开启内容阅读次数</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span> <span class="comment">#内容页阅读数的图标</span></span><br></pre></td></tr></table></figure>
+<h2 id="2页面阅读统计"><a href="#2页面阅读统计" class="headerlink" title="2页面阅读统计"></a>2页面阅读统计</h2><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">busuanzi_count:</span>      <span class="comment"># 页面阅读统计</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>    <span class="comment">#设true 开启</span></span><br><span class="line">  <span class="attr">total_visitors:</span> <span class="literal">true</span>     <span class="comment">#总阅读人数 uv数</span></span><br><span class="line">  <span class="attr">total_visitors_icon:</span> <span class="string">user</span>  <span class="comment">#阅读总人数的图标</span></span><br><span class="line">  <span class="attr">total_views:</span> <span class="literal">true</span>  <span class="comment">#总阅读次数 pv数</span></span><br><span class="line">  <span class="attr">total_views_icon:</span> <span class="string">eye</span>  <span class="comment">#阅读总次数的图标</span></span><br><span class="line">  <span class="attr">post_views:</span> <span class="literal">true</span> <span class="comment">#开启内容阅读次数</span></span><br><span class="line">  <span class="attr">post_views_icon:</span> <span class="string">eye</span> <span class="comment">#内容页阅读数的图标</span></span><br></pre></td></tr></table></figure>
 
 <p>给hexo博客添加fancybox图片灯箱功能</p>
 <p>首先安装依赖：</p>
@@ -110,9 +119,9 @@
 <p>安装后打开<code>主题配置</code>文件，找到<code>fancybox</code></p>
 <p>fancybox: true</p>
 <p>完毕</p>
-<h1 id="添加站点访问人数和总访问量"><a href="#添加站点访问人数和总访问量" class="headerlink" title="添加站点访问人数和总访问量"></a>添加站点访问人数和总访问量</h1><p>修改next主题配置文件，搜索<strong>busuanzi_count</strong></p>
-<p>busuanzi_count:<br>  enable: true<br>  total_visitors: true<br>  total_visitors_icon: user<br>  total_views: true<br>  total_views_icon: eye<br>  post_views: true<br>  post_views_icon: eye</p>
-<h2 id="设置背景图片"><a href="#设置背景图片" class="headerlink" title="设置背景图片"></a>设置背景图片</h2><ul>
+<h2 id="3添加站点访问人数和总访问量"><a href="#3添加站点访问人数和总访问量" class="headerlink" title="3添加站点访问人数和总访问量"></a>3添加站点访问人数和总访问量</h2><p>修改next主题配置文件，搜索<strong>busuanzi_count</strong></p>
+<p>  busuanzi_count:<br>  enable: true<br>  total_visitors: true<br>  total_visitors_icon: user<br>  total_views: true<br>  total_views_icon: eye<br>  post_views: true<br>  post_views_icon: eye</p>
+<h2 id="4设置背景图片"><a href="#4设置背景图片" class="headerlink" title="4设置背景图片"></a>4设置背景图片</h2><ul>
 <li>找到CSS存放位置：</li>
 </ul>
 <p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/image-20200712232432523.png"></p>
@@ -127,7 +136,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//背景图片</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://pic.heson10.com/img/image-20200712231958010.png);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-size: cover;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>代码中url的链接就是你想要替换的博客背景图片链接，建议上传到图床，然后粘贴上去</p>
-<h2 id="设置所有边框为圆角"><a href="#设置所有边框为圆角" class="headerlink" title="设置所有边框为圆角"></a>设置所有边框为圆角</h2><p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
+<h2 id="5设置所有边框为圆角"><a href="#5设置所有边框为圆角" class="headerlink" title="5设置所有边框为圆角"></a>5设置所有边框为圆角</h2><p>打开文件，路径：\themes\next\source\css_variables\Gemini.styl ，添加以下代码：</p>
 <p>ps：Gemini是我用的样式，用哪个样式修改哪个文件</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 修改主题页面布局为圆角</span><br><span class="line">$border-radius-inner = 15px 15px 15px 15px;</span><br><span class="line">$border-radius = 15px;</span><br></pre></td></tr></table></figure>
 
@@ -139,28 +148,28 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
 
 <p>完毕！</p>
-<h1 id="hexo博客如何隐藏或者自定义图片名"><a href="#hexo博客如何隐藏或者自定义图片名" class="headerlink" title="hexo博客如何隐藏或者自定义图片名"></a>hexo博客如何隐藏或者自定义图片名</h1><p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/20200828161244956.png"></p>
+<h2 id="6hexo博客如何隐藏或者自定义图片名"><a href="#6hexo博客如何隐藏或者自定义图片名" class="headerlink" title="6hexo博客如何隐藏或者自定义图片名"></a>6hexo博客如何隐藏或者自定义图片名</h2><p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/20200828161244956.png"></p>
 <p>开头会有一个[*****]，这个方括号里面填写的是默认的图片名称。如果你不修改的话，显示就是下面这样</p>
 <p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTkwMDkx,size_16,color_FFFFFF,t_70.png"></p>
 <p>如果你想隐藏图片名，直接把方括号里面的内容删去即可，或者你想自定义图片名，修改方括号内部文字即可。</p>
-<h1 id="hexo框架next主题统计访问人数"><a href="#hexo框架next主题统计访问人数" class="headerlink" title="hexo框架next主题统计访问人数"></a>hexo框架next主题统计访问人数</h1><h2 id="网络有很多博客的统计方法-最方便的就是不蒜子-next主题的较高级的版本内置不蒜子"><a href="#网络有很多博客的统计方法-最方便的就是不蒜子-next主题的较高级的版本内置不蒜子" class="headerlink" title="网络有很多博客的统计方法 最方便的就是不蒜子 next主题的较高级的版本内置不蒜子"></a>网络有很多博客的统计方法 最方便的就是不蒜子 next主题的较高级的版本内置不蒜子</h2><p>打开主题配置文件,路径如下</p>
+<h2 id="7hexo框架next主题统计访问人数"><a href="#7hexo框架next主题统计访问人数" class="headerlink" title="7hexo框架next主题统计访问人数"></a>7hexo框架next主题统计访问人数</h2><p>网络有很多博客的统计方法 最方便的就是不蒜子 next主题的较高级的版本内置不蒜子</p>
+<p>打开主题配置文件,路径如下</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">themes\next\_config.yml</span><br><span class="line">#主题配置文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>搜索busuanzi或者找到它,大概在代码720行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  enable: true</span><br><span class="line">  total_visitors: true</span><br><span class="line">  total_visitors_icon: user</span><br><span class="line">  total_views: true</span><br><span class="line">  total_views_icon: eye</span><br><span class="line">  post_views: true</span><br><span class="line">  post_views_icon: eye</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
-
-<h2 id="如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数"><a href="#如上设置-使用hexo-s-命令发现访问数很多-在本地查看的变量是错误-hexo-c-hexo-d之后打开网页-就能看到正确的访问人数" class="headerlink" title="如上设置,使用hexo s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数"></a>如上设置,使用<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数</h2><h3 id="hexo博客侧边栏增加微信公众号二维码"><a href="#hexo博客侧边栏增加微信公众号二维码" class="headerlink" title="hexo博客侧边栏增加微信公众号二维码"></a>hexo博客侧边栏增加微信公众号二维码</h3><p>2.1 获取微信公众号二维码图片<br>从公众号管理后台获取公众号二维码图片，如下图所示。将选中的图片放入博客根目录下的.&#x2F;themes&#x2F;next&#x2F;source&#x2F;images&#x2F;目录中，并将图片改名为wechat_channel.png，注意不是放在public&#x2F;images&#x2F;目录。</p>
+<p>如上设置,使用<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a> s 命令发现访问数很多,在本地查看的变量是错误, hexo c ,hexo d之后打开网页,就能看到正确的访问人数</p>
+<h2 id="8hexo博客侧边栏增加微信公众号二维码"><a href="#8hexo博客侧边栏增加微信公众号二维码" class="headerlink" title="8hexo博客侧边栏增加微信公众号二维码"></a>8hexo博客侧边栏增加微信公众号二维码</h2><p>2.1 获取微信公众号二维码图片<br>从公众号管理后台获取公众号二维码图片，如下图所示。将选中的图片放入博客根目录下的.&#x2F;themes&#x2F;next&#x2F;source&#x2F;images&#x2F;目录中，并将图片改名为wechat_channel.png，注意不是放在public&#x2F;images&#x2F;目录。</p>
 <p>2.2 设置next主题侧边栏文件</p>
 <p>编辑themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;sidebar.swig 文件，在里面搜索theme.back2top.enable，在这个if语句之前添加下面的代码</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div class=&quot;wechat_channel&quot;&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;!-- 这里添加你的二维码图片 --&gt;</span><br><span class="line">        &lt;img src =&quot;/images/wechat_channel.png&quot;&gt;</span><br><span class="line">        &lt;!-- &lt;span&gt;公众号&lt;/span&gt; --&gt;</span><br><span class="line">      &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>如下图所示，</p>
 <p><img src="/../images/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/v2-0103c18a258491c4679aa1d860085624_r.jpg"></p>
-<h3 id="hexo博客文章底部增加微信公众号二维码"><a href="#hexo博客文章底部增加微信公众号二维码" class="headerlink" title="hexo博客文章底部增加微信公众号二维码"></a>hexo博客文章底部增加微信公众号二维码</h3><p> 获取微信公众号二维码图片</p>
+<h2 id="9hexo博客文章底部增加微信公众号二维码"><a href="#9hexo博客文章底部增加微信公众号二维码" class="headerlink" title="9hexo博客文章底部增加微信公众号二维码"></a>9hexo博客文章底部增加微信公众号二维码</h2><p> 获取微信公众号二维码图片</p>
 <p>同2.1所示。</p>
-<h2 id="在菜单中添加链接"><a href="#在菜单中添加链接" class="headerlink" title="在菜单中添加链接"></a>在菜单中添加链接</h2><p>编辑主题的<code>_config.yml</code>，在<code>menu</code>中的添加如下:</p>
+<h2 id="10在菜单中添加链接"><a href="#10在菜单中添加链接" class="headerlink" title="10在菜单中添加链接"></a>10在菜单中添加链接</h2><p>编辑主题的<code>_config.yml</code>，在<code>menu</code>中的添加如下:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  resources: /resources || download</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p><code>||</code>之前的值是目标链接，之后的是分类页面的图标，图标名称来自于<a href="http://fontawesome.io/icons/">FontAwesome icon</a>。若没有配置图标，默认会使用问号图标。</p>
@@ -169,7 +178,7 @@
 <p><a href="http://www.fontawesome.com.cn/faicons/">http://www.fontawesome.com.cn/faicons/</a></p>
 <p>主页样式修改教程</p>
 <p><a href="https://blog.z7sz.top/post/554e69bd.html">https://blog.z7sz.top/post/554e69bd.html</a></p>
-<h3 id="给文章设置分类属性"><a href="#给文章设置分类属性" class="headerlink" title="给文章设置分类属性"></a>给文章设置分类属性</h3><p>首先打开需要添加分类的文章，在文章里添加上以下文案就设置好分类了</p>
+<h2 id="11给文章设置分类属性"><a href="#11给文章设置分类属性" class="headerlink" title="11给文章设置分类属性"></a>11给文章设置分类属性</h2><p>首先打开需要添加分类的文章，在文章里添加上以下文案就设置好分类了</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">categories: </span><br><span class="line">- Android</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>如上<code>categories:Android</code>表示添加这边文章到 “<strong>Android</strong>” 这个分类下。<br>然后我们就可以在博客到分类里看到该分类了。</p>
@@ -184,20 +193,21 @@
 <p>改之前</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">min: 12 # Minimun font size in px</span><br><span class="line"> max: 30 # Maxium font size in px</span><br><span class="line"> start: &quot;#ccc&quot; # Start color (hex, rgba, hsla or color keywords)</span><br><span class="line"> end: &quot;#111&quot; # End color (hex, rgba, hsla or color keywords)</span><br><span class="line"> amount: 200 # Amount of tags, change it if you have more than 200 tags</span><br></pre></td></tr></table></figure>
 
-<h2 id="Hexo-Next-添加菜单分类页面"><a href="#Hexo-Next-添加菜单分类页面" class="headerlink" title="Hexo+Next 添加菜单分类页面"></a>Hexo+Next 添加菜单分类页面</h2><p>在<code>[Hexo+Next]</code>主题下新增一个资源分类页面。</p>
-<h2 id="新建一个页面，命名为resources。"><a href="#新建一个页面，命名为resources。" class="headerlink" title="新建一个页面，命名为resources。"></a>新建一个页面，命名为<code>resources</code>。</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;resources&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="12Hexo-Next-添加菜单分类页面"><a href="#12Hexo-Next-添加菜单分类页面" class="headerlink" title="12Hexo+Next 添加菜单分类页面"></a>12Hexo+Next 添加菜单分类页面</h2><p>在<code>[Hexo+Next]</code>主题下新增一个资源分类页面。</p>
+<p>新建一个页面，命名为<code>resources</code>。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;resources&quot;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>此时会在hexo &gt; source文件夹中会生成一个resources文件夹。</p>
 </blockquote>
-<h2 id="编辑resources文件夹下的md页面"><a href="#编辑resources文件夹下的md页面" class="headerlink" title="编辑resources文件夹下的md页面"></a>编辑resources文件夹下的<code>md</code>页面</h2><p>将类型设置为<code>resources</code>，主题将自动为这个页面显示所有分类。</p>
+<p>编辑resources文件夹下的<code>md</code>页面</p>
+<p>将类型设置为<code>resources</code>，主题将自动为这个页面显示所有分类。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 常用工具</span><br><span class="line">date: 2017-12-14 13:05:38</span><br><span class="line">type: &quot;resources&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <p>注意：如果有启用多说或者Disqus评论，默认页面也会带有评论。需要关闭的话，请添加字段<code>comments</code>并将值设置为<code>false</code>，如：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 常用工具</span><br><span class="line">date: 2017-12-14 13:05:38</span><br><span class="line">type: &quot;resources&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
-<p> 设置next主题文章底部</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">编辑themes/next/layout/_partials/post/post-copyright.swig文件，在底部的&lt;/div&gt;上面增加下述代码，</span><br></pre></td></tr></table></figure>
+<h2 id="13-设置next主题文章底部"><a href="#13-设置next主题文章底部" class="headerlink" title="13 设置next主题文章底部"></a>13 设置next主题文章底部</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">编辑themes/next/layout/_partials/post/post-copyright.swig文件，在底部的&lt;/div&gt;上面增加下述代码，</span><br></pre></td></tr></table></figure>
 
 
 
@@ -205,7 +215,7 @@
 
 <p>如下图所示</p>
 <p><img src="E:/Blog/source/images/hexo-next%25E4%25B8%25BB%25E9%25A2%2598%25E7%25BE%258E%25E5%258C%2596%25E9%2597%25AD%25E5%259D%2591%25E6%2595%2599%25E7%25A8%258B/v2-ba380d939e67c84b5870e85491797a03_720w.jpg"></p>
-<h1 id="设置hexo首页只显示部分摘要（不显示全文"><a href="#设置hexo首页只显示部分摘要（不显示全文" class="headerlink" title="设置hexo首页只显示部分摘要（不显示全文"></a>设置hexo首页只显示部分摘要（不显示全文</h1><h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在文章的<code>front-matter</code>中添加<code>description</code>，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
+<h2 id="14设置hexo首页只显示部分摘要（不显示全文"><a href="#14设置hexo首页只显示部分摘要（不显示全文" class="headerlink" title="14设置hexo首页只显示部分摘要（不显示全文"></a>14设置hexo首页只显示部分摘要（不显示全文</h2><h2 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h2><p>在文章的<code>front-matter</code>中添加<code>description</code>，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 让首页显示部分内容</span><br><span class="line">date: 2020-02-23 22:55:10</span><br><span class="line">description: 这是显示在首页的概述，正文内容均会被隐藏。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 
 <h2 id="方法二：文章截断"><a href="#方法二：文章截断" class="headerlink" title="方法二：文章截断"></a>方法二：文章截断</h2><p>在需要截断的地方加入：</p>
@@ -225,8 +235,26 @@
   <entry>
     <title>typora编辑器的使用心得</title>
     <url>/2022/07/09/typora%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h1 id="1怎么添加分割线？"><a href="#1怎么添加分割线？" class="headerlink" title="1怎么添加分割线？"></a>1怎么添加分割线？</h1><p>输入“—”，也就是三个减号</p>
+    <content><![CDATA[<h2 id="1怎么添加分割线？"><a href="#1怎么添加分割线？" class="headerlink" title="1怎么添加分割线？"></a>1怎么添加分割线？</h2><span id="more"></span>
+
+<p>输入“—”，也就是三个减号</p>
 <p>按回车键后分割线就出现了</p>
+<h2 id="2字体加颜色"><a href="#2字体加颜色" class="headerlink" title="2字体加颜色"></a>2字体加颜色</h2><p>Typora本身并不支持选择颜色进行内容的设置，但可以使用其现有的功能实现对文本内容进行颜色的设置，此处以使用内联公式方式进行颜色字体的设置。</p>
+<p>文件-偏好设置，选择Markdown，勾选Markdown扩展语法下的内联公式，然后重启Typora.</p>
+<p>文本颜色设置公式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\textcolor&#123;颜色名&#125;&#123;文字内容&#125; $</span><br></pre></td></tr></table></figure>
+
+<p>示例：绿色 - <code>$\textcolor&#123;green&#125;&#123;绿色的文字内容&#125; $</code>，效果如下:</p>
+<h2 id="3文字加链接"><a href="#3文字加链接" class="headerlink" title="3文字加链接"></a>3文字加链接</h2><p><code>[]</code>里写链接文字，<code>()</code>里写链接地址，<code>()</code>中的<code>&quot;&quot;</code>可以为链接指定 title 属性，title 属性可加可不加。title 属性的效果是鼠标悬停在链接上会出现的 title 文字。快捷键 Ctrl+K</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[链接文字](链接地址 &quot;链接标题&quot;)这样的形式。链接地址与链接标题前有一个空格，例如：</span><br><span class="line">欢迎来到[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure>
+
+<h2 id="4目录文字前有黑点方法"><a href="#4目录文字前有黑点方法" class="headerlink" title="4目录文字前有黑点方法"></a>4目录文字前有黑点方法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A 减号+空格，回车后自动出现下一个黑点</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>A</li>
+</ul>
+<h2 id="5标题居中使用标题标签"><a href="#5标题居中使用标题标签" class="headerlink" title="5标题居中使用标题标签"></a>5标题居中使用标题标签</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h1 align = &quot;center&quot;&gt;标题居中&lt;/h1&gt; </span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>教程</category>
@@ -238,30 +266,12 @@
   <entry>
     <title>影视软件推荐</title>
     <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th><a href="hldmengda.github.io">火龙果</a></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+    <content><![CDATA[<h2 id="电视盒子TV"><a href="#电视盒子TV" class="headerlink" title="电视盒子TV"></a>电视盒子TV</h2><ul>
+<li><a href="https://wwn.lanzoul.com/b011t757g" title="水星TV">水星TV</a></li>
+</ul>
+<h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
+<li>火龙果</li>
+</ul>
 ]]></content>
       <categories>
         <category>安卓影视</category>
