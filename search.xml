@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2022年7月每日分享</title>
+    <url>/2022/07/13/2022%E5%B9%B47%E6%9C%88%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<p>可以收藏「大师兄资源网」<a href="https://hldmengda.github.io/">https://hldmengda.github.io/</a></p>
+<p><strong>关于大师兄每日分享栏目</strong></p>
+<p>发现一些不错的资源，你有好的发现或者建议点击<a href="https://hldmengda.github.io/messagebord/" title="这里">这里</a>快速反馈</p>
+<h2 id="7月16日"><a href="#7月16日" class="headerlink" title="7月16日"></a>7月16日</h2><p><a href="https://xbeibeix.com/api/bilibili/">B站视频下载解析</a></p>
+<p>@匿名投稿 可以解析B站视频。</p>
+<p><a href="https://bazhan.wang/">在线扒站工具</a></p>
+<p>@匿名投稿 一键将指定网页的前端资源打包下载。</p>
+<p><a href="https://remeins.com/">记灵工具</a></p>
+<p>免费的 PDF &#x2F; 图片 &#x2F; 视频转换工具。</p>
+]]></content>
+      <categories>
+        <category>每日分享</category>
+      </categories>
+      <tags>
+        <tag>神器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TVBox播放器内置接口教程</title>
     <url>/2022/07/06/TVBox%E6%92%AD%E6%94%BE%E5%99%A8%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>手机打开MT管理器</p>
@@ -35,26 +55,6 @@
       </categories>
       <tags>
         <tag>TVBox</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022年7月每日分享</title>
-    <url>/2022/07/13/2022%E5%B9%B47%E6%9C%88%E6%AF%8F%E6%97%A5%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<p>可以收藏「大师兄资源网」<a href="https://hldmengda.github.io/">https://hldmengda.github.io/</a></p>
-<p><strong>关于大师兄每日分享栏目</strong></p>
-<p>发现一些不错的资源，你有好的发现或者建议点击<a href="https://hldmengda.github.io/messagebord/" title="这里">这里</a>快速反馈</p>
-<h2 id="7月16日"><a href="#7月16日" class="headerlink" title="7月16日"></a>7月16日</h2><p><a href="https://xbeibeix.com/api/bilibili/">B站视频下载解析</a></p>
-<p>@匿名投稿 可以解析B站视频。</p>
-<p><a href="https://bazhan.wang/">在线扒站工具</a></p>
-<p>@匿名投稿 一键将指定网页的前端资源打包下载。</p>
-<p><a href="https://remeins.com/">记灵工具</a></p>
-<p>免费的 PDF &#x2F; 图片 &#x2F; 视频转换工具。</p>
-]]></content>
-      <categories>
-        <category>每日分享</category>
-      </categories>
-      <tags>
-        <tag>神器</tag>
       </tags>
   </entry>
   <entry>
@@ -230,12 +230,37 @@
 <p>首页就会显示这条以上的所有内容，隐藏接下来的所有内容。<br>例如本文会显示到<code>修改配置</code>上面。</p>
 <p>这个明显就方便很多，但当然有利有弊，比如开头都是废话首页看着就不是很好看，因此我一般会先选择方法二，如果感觉文章前面的写的不太好再用方法一。</p>
 <p><img src="D:/Users/Administrator/AppData/Local/Programs/Typora/dsxtc.test.upcdn.net/img/202207111539805.jpg"></p>
+<h2 id="15Hexo-Next-修改超链接颜色"><a href="#15Hexo-Next-修改超链接颜色" class="headerlink" title="15Hexo Next 修改超链接颜色"></a>15Hexo Next 修改超链接颜色</h2><p>Hexo Next自带的超链接颜色为灰色加下划线，看起来不是特别明显，所以将其修改为蓝色。</p>
+<p>1.在<code>./themes/next/source/css/_common/components/post/post.styl</code>里添加如下代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if hexo-config(&quot;custom_css.post_body_a.enable&quot;)</span><br><span class="line">  .post-body </span><br><span class="line">    a:not(.btn)&#123;</span><br><span class="line">      color: convert(hexo-config(&quot;custom_css.post_body_a.normal_color&quot;));</span><br><span class="line">      border-bottom: none;</span><br><span class="line">      &amp;:hover &#123;</span><br><span class="line">        color: convert(hexo-config(&quot;custom_css.post_body_a.hover_color&quot;));</span><br><span class="line">        text-decoration: underline;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>a:not(.btn)</code>避免修改首页的”阅读全文”按钮</p>
+<p>2.在<code>./themes/next/_config.yml</code>里添加如下代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_css:</span><br><span class="line">  post_body_a:</span><br><span class="line">    enable: true</span><br><span class="line">    normal_color: &quot;#3296FA&quot;</span><br><span class="line">    hover_color: &quot;#0593d3&quot;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>教程</category>
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>影视软件推荐</title>
+    <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="电视盒子TV"><a href="#电视盒子TV" class="headerlink" title="电视盒子TV"></a>电视盒子TV</h2><ul>
+<li><a href="https://wwn.lanzoul.com/b011t757g" title="水星TV">水星TV</a></li>
+</ul>
+<h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
+<li>火龙果</li>
+</ul>
+]]></content>
+      <categories>
+        <category>安卓影视</category>
+      </categories>
+      <tags>
+        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
@@ -267,23 +292,6 @@
       </categories>
       <tags>
         <tag>typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>影视软件推荐</title>
-    <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="电视盒子TV"><a href="#电视盒子TV" class="headerlink" title="电视盒子TV"></a>电视盒子TV</h2><ul>
-<li><a href="https://wwn.lanzoul.com/b011t757g" title="水星TV">水星TV</a></li>
-</ul>
-<h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
-<li>火龙果</li>
-</ul>
-]]></content>
-      <categories>
-        <category>安卓影视</category>
-      </categories>
-      <tags>
-        <tag>影视</tag>
       </tags>
   </entry>
   <entry>
