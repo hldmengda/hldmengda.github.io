@@ -6,6 +6,12 @@
     <content><![CDATA[<p>可以收藏「大师兄资源网」<a href="https://hldmengda.github.io/">https://hldmengda.github.io/</a></p>
 <p><strong>关于大师兄每日分享栏目</strong></p>
 <p>发现一些不错的资源，你有好的发现或者建议点击<a href="https://hldmengda.github.io/messagebord/" title="这里">这里</a>快速反馈</p>
+<span id="more"></span>
+
+<h2 id="7月27日"><a href="#7月27日" class="headerlink" title="7月27日"></a>7月27日</h2><p><a href="http://example.com/2022/07/27/%E8%8B%B9%E6%9E%9Cios-%E4%BC%AA%E8%A3%85%E4%B8%8A%E6%9E%B6%E7%9A%84%E5%BD%B1%E8%A7%86APP%E5%90%88%E9%9B%86/" title="苹果观影">苹果ios观影神器</a></p>
+<p>@收集了目前大部分伪装上架的观影APP</p>
+<p><a href="https://wwn.lanzoul.com/iKg6208hgpob">喵影视</a></p>
+<p>@TVBox目前魔改比较好用的带内置接口的观影APP</p>
 <h2 id="7月16日"><a href="#7月16日" class="headerlink" title="7月16日"></a>7月16日</h2><p><a href="https://xbeibeix.com/api/bilibili/">B站视频下载解析</a></p>
 <p>@匿名投稿 可以解析B站视频。</p>
 <p><a href="https://bazhan.wang/">在线扒站工具</a></p>
@@ -238,6 +244,13 @@
 <p>2.在<code>./themes/next/_config.yml</code>里添加如下代码。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_css:</span><br><span class="line">  post_body_a:</span><br><span class="line">    enable: true</span><br><span class="line">    normal_color: &quot;#3296FA&quot;</span><br><span class="line">    hover_color: &quot;#0593d3&quot;</span><br></pre></td></tr></table></figure>
 
+<h2 id="16Hexo-nexT主题之文章置顶"><a href="#16Hexo-nexT主题之文章置顶" class="headerlink" title="16Hexo nexT主题之文章置顶"></a>16Hexo nexT主题之文章置顶</h2><p>Hexo默认只提供了按发布日期的排序，只好网上找了些资料修改。</p>
+<p>原理：在Hexo生成首页HTML时，将top值高的文章排在前面，达到置顶功能。</p>
+<p>修改Hexo文件夹下的<code>node_modules/hexo-generator-index/lib/generator.js</code>，在生成文章之前进行文章top值排序。</p>
+<p>需添加的代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">posts.data = posts.data.sort(function(a, b) &#123;</span><br><span class="line">    if(a.top &amp;&amp; b.top) &#123; // 两篇文章top都有定义</span><br><span class="line">        if(a.top == b.top) return b.date - a.date; // 若top值一样则按照文章日期降序排</span><br><span class="line">        else return b.top - a.top; // 否则按照top值降序排</span><br><span class="line">    &#125;</span><br><span class="line">    else if(a.top &amp;&amp; !b.top) &#123; // 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span><br><span class="line">        return -1;</span><br><span class="line">    &#125;</span><br><span class="line">    else if(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">        return 1;</span><br><span class="line">    &#125;</span><br><span class="line">    else return b.date - a.date; // 都没定义按照文章日期降序排</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>原文地址<a href="https://zhwhong.cn/2017/03/23/deal-with-hexo-article-top-problem/">https://zhwhong.cn/2017/03/23/deal-with-hexo-article-top-problem/</a></p>
 ]]></content>
       <categories>
         <category>教程</category>
@@ -286,19 +299,29 @@
 </ul>
 <span id="more"></span>
 
-
-
-
-
-
-
+<ul>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
+</ul>
 <h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
 <li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
 <li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iFRoV083nv6h" title="花生">花生小站</a></li>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
 </ul>
 <h2 id="网页端"><a href="#网页端" class="headerlink" title="网页端"></a>网页端</h2><ul>
 <li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
 <li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
+<li><a href="https://www.12wo.com/" title="动漫">12wo动漫网</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+</ul>
+<h2 id="苹果ios影视"><a href="#苹果ios影视" class="headerlink" title="苹果ios影视"></a>苹果ios影视</h2><ul>
+<li><a href="https://apps.apple.com/cn/app/id1582155663" title="花生">花生小站</a></li>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -306,6 +329,50 @@
       </categories>
       <tags>
         <tag>影视</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果ios 伪装上架的影视APP合集</title>
+    <url>/2022/07/27/%E8%8B%B9%E6%9E%9Cios-%E4%BC%AA%E8%A3%85%E4%B8%8A%E6%9E%B6%E7%9A%84%E5%BD%B1%E8%A7%86APP%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h2 id="App-Store-伪装上架的影视APP合集"><a href="#App-Store-伪装上架的影视APP合集" class="headerlink" title="App Store 伪装上架的影视APP合集"></a>App Store 伪装上架的影视APP合集</h2><span id="more"></span>
+
+<p>今天整理了目前能用的iOS观影神器</p>
+<p>不过这类软件经常下架</p>
+<p>建议大家收藏好这篇文章</p>
+<p>我会持续做成一个系列更新下去的</p>
+<p><strong>点击链接****复制到Safari浏览器下载</strong></p>
+<p>17、雪花影视：<a href="https://apps.apple.com/cn/app/%E5%BF%AB%E6%8D%B7%E5%BD%95%E9%9F%B3/id1617052763">https://apps.apple.com/cn/app/%E5%BF%AB%E6%8D%B7%E5%BD%95%E9%9F%B3/id1617052763</a></p>
+<p>官网：<a href="https://xuehua.app/index.html?ufacility=pc">xuehua.app</a></p>
+<p>16、星空影视：<a href="https://apps.apple.com/cn/app/id1615174919">https://apps.apple.com/cn/app/id1615174919</a></p>
+<p>官网：<a href="https://xkys.tv/">https://xkys.tv/ </a>认真查看解锁方式</p>
+<p>15、香瓜影视：<a href="https://apps.apple.com/cn/app/%E7%88%B1%E9%A5%AD%E8%A1%8C%E7%A8%8B/id1606748715">App Store 上的“爱饭行程” (apple.com)</a></p>
+<p>官网：<a href="https://www.xiangguasp.com/">https://www.xiangguasp.com/</a></p>
+<p>14、今日影视：<a href="https://apps.apple.com/cn/app/id1322243737">https://apps.apple.com/cn/app/id1322243737</a></p>
+<p>13、影视大全：<a href="https://apps.apple.com/cn/app/id1135798414#?platform=iphone">https://apps.apple.com/cn/app/id1135798414#?platform=iphone</a></p>
+<p>12、心爱影视：<a href="https://apps.apple.com/cn/app/id1597433802#?platform=iphone">https://apps.apple.com/cn/app/id1597433802#?platform=iphone</a></p>
+<p>11、肥波影视：<a href="https://apps.apple.com/cn/app/id1542735193#?platform=ipad">https://apps.apple.com/cn/app/id1542735193#?platform=ipad</a></p>
+<p>10、青蛙视频：<a href="https://apps.apple.com/cn/app/id1533237016">https://apps.apple.com/cn/app/id1533237016</a></p>
+<p>9、曲奇影视：<a href="https://apps.apple.com/cn/app/id1550930782">https://apps.apple.com/cn/app/id1550930782</a></p>
+<p>8、番茄影视：<a href="https://apps.apple.com/cn/app/id1517366584">https://apps.apple.com/cn/app/id1517366584</a></p>
+<p>7、雪梨影视：<a href="https://apps.apple.com/cn/app/%E6%A0%91%E6%9E%97%E8%AE%B0%E5%BF%86/id1600227653#?platform=iphone">App Store 上的“树林记忆” (apple.com)</a></p>
+<p>6、嘿茶锋影视：<a href="https://apps.apple.com/cn/app/%E5%98%BF%E9%94%8B%E8%AE%B0%E8%B4%A6/id1604417836">App Store 上的“嘿锋记账” (apple.com)</a></p>
+<p>官方地址：<a href="https://www.hfys8.vip/app/">https://www.hfys8.vip/app/</a></p>
+<p>5、天空影视：<a href="https://apps.apple.com/cn/app/id1607144682">https://apps.apple.com/cn/app/id1607144682</a></p>
+<p>官网地址：<a href="https://www.tkys.tv/app1/app.html">https://www.tkys.tv/app1/app.html</a></p>
+<p>4、阿欧影视：<a href="https://apps.apple.com/cn/app/id1602800975">https://apps.apple.com/cn/app/id1602800975</a></p>
+<p>3、饭团影视：<a href="https://apps.apple.com/cn/app/id1611343619">https://apps.apple.com/cn/app/id1611343619</a></p>
+<p>官网地址：<a href="https://fantuan.tv/APP/mobile/index.html">https://fantuan.tv/APP/mobile/index.html</a></p>
+<p>2、老韩综影视：<a href="https://apps.apple.com/cn/app/%E8%AE%B0%E5%88%86%E5%B0%8F%E5%8A%A9%E6%89%8B/id1602004625">App Store 上的“记分小助手” (apple.com)</a></p>
+<p>1、奇侠影视：<a href="https://itunes.apple.com/app/id1604560481">https://itunes.apple.com/app/id1604560481</a></p>
+<p>官网地址：<a href="https://www.qixia.me/index.html?ufacility=pc">https://www.qixia.me/index.html?ufacility=pc</a></p>
+<p>···持续更新，建议收藏</p>
+<p>如果你有其他的iOS优质观影APP，都可以在留言区补充。</p>
+<h2 id="关注官方公众号：电视软件fans"><a href="#关注官方公众号：电视软件fans" class="headerlink" title="关注官方公众号：电视软件fans"></a>关注官方公众号：电视软件fans</h2>]]></content>
+      <categories>
+        <category>苹果ios影视</category>
+      </categories>
+      <tags>
+        <tag>伪装</tag>
       </tags>
   </entry>
   <entry>
