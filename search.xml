@@ -236,6 +236,116 @@
       </tags>
   </entry>
   <entry>
+    <title>typora编辑器的使用心得</title>
+    <url>/2022/07/09/typora%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
+    <content><![CDATA[<h2 id="1怎么添加分割线？"><a href="#1怎么添加分割线？" class="headerlink" title="1怎么添加分割线？"></a>1怎么添加分割线？</h2><span id="more"></span>
+
+<p>输入“—”，也就是三个减号</p>
+<p>按回车键后分割线就出现了</p>
+<h2 id="2字体加颜色"><a href="#2字体加颜色" class="headerlink" title="2字体加颜色"></a>2字体加颜色</h2><p>Typora本身并不支持选择颜色进行内容的设置，但可以使用其现有的功能实现对文本内容进行颜色的设置，此处以使用内联公式方式进行颜色字体的设置。</p>
+<p>文件-偏好设置，选择Markdown，勾选Markdown扩展语法下的内联公式，然后重启Typora.</p>
+<p>文本颜色设置公式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\textcolor&#123;颜色名&#125;&#123;文字内容&#125; $</span><br></pre></td></tr></table></figure>
+
+<p>示例：绿色 - <code>$\textcolor&#123;green&#125;&#123;绿色的文字内容&#125; $</code>，效果如下:</p>
+<h2 id="3文字加链接"><a href="#3文字加链接" class="headerlink" title="3文字加链接"></a>3文字加链接</h2><p><code>[]</code>里写链接文字，<code>()</code>里写链接地址，<code>()</code>中的<code>&quot;&quot;</code>可以为链接指定 title 属性，title 属性可加可不加。title 属性的效果是鼠标悬停在链接上会出现的 title 文字。快捷键 Ctrl+K</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[链接文字](链接地址 &quot;链接标题&quot;)这样的形式。链接地址与链接标题前有一个空格，例如：</span><br><span class="line">欢迎来到[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure>
+
+<h2 id="4目录文字前有黑点方法"><a href="#4目录文字前有黑点方法" class="headerlink" title="4目录文字前有黑点方法"></a>4目录文字前有黑点方法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A 减号+空格，回车后自动出现下一个黑点</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>A</li>
+</ul>
+<h2 id="5标题居中使用标题标签"><a href="#5标题居中使用标题标签" class="headerlink" title="5标题居中使用标题标签"></a>5标题居中使用标题标签</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h1 align = &quot;center&quot;&gt;标题居中&lt;/h1&gt; </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>影视软件推荐</title>
+    <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h2 id="电视盒子TV"><a href="#电视盒子TV" class="headerlink" title="电视盒子TV"></a>电视盒子TV</h2><ul>
+<li><a href="https://wwn.lanzoul.com/b011t757g" title="水星TV">水星TV</a></li>
+<li><a href="https://wwn.lanzoul.com/i9Rkv082d15a" title="hdp">HDP直播</a></li>
+</ul>
+<span id="more"></span>
+
+<ul>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
+</ul>
+<h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
+<li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
+<li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iFRoV083nv6h" title="花生">花生小站</a></li>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
+</ul>
+<h2 id="网页端"><a href="#网页端" class="headerlink" title="网页端"></a>网页端</h2><ul>
+<li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
+<li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
+<li><a href="https://www.12wo.com/" title="动漫">12wo动漫网</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+</ul>
+<h2 id="苹果ios影视"><a href="#苹果ios影视" class="headerlink" title="苹果ios影视"></a>苹果ios影视</h2><ul>
+<li><a href="https://apps.apple.com/cn/app/id1582155663" title="花生">花生小站</a></li>
+<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
+<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>安卓影视</category>
+      </categories>
+      <tags>
+        <tag>影视</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>阿里云网盘token的提取和注入jar教程</title>
+    <url>/2022/07/05/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>阿里云网页版地址：<a href="https://www.aliyundrive.com/sign/in">https://www.aliyundrive.com/sign/in</a></p>
+<p>用电脑操作复制地址打开登录</p>
+<p>按F12就出现下面的图了</p>
+<p>图小的自己用鼠标拉伸一下</p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640.png" alt="img"></p>
+<span id="more"></span>
+
+<p>按图找到你的token</p>
+<p>token自己保管好相当于你家的钥匙</p>
+<p>然后新建一个文本这个token码放到文本里</p>
+<p>上传到你的外链、本地服务器、服务器、github等等</p>
+<p>外链上传时最好加密一下，避免盗取</p>
+<p>最后生成一个连接</p>
+<p>转战手机</p>
+<p>用MT管理器打开你失效的jar文件</p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628281.png" alt="img"></p>
+<p><strong>用第一个打开方式打开classes.dex</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628292.jpeg" alt="img"></p>
+<p><strong>然后点搜索 搜索自己</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628303.jpeg" alt="img"></p>
+<p><strong>点开搜到的结果</strong></p>
+<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628304.jpeg" alt="img"></p>
+<p><strong>把刚才自己弄得token连接放到这里就可以用了</strong></p>
+<p>**<br>**</p>
+<p><strong>教程结束</strong></p>
+<p>**<br>**</p>
+<p><strong>哪里不懂及时沟通</strong></p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>阿里云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo next主题美化闭坑教程</title>
     <url>/2022/07/06/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="1修改文章底部带-号的标签"><a href="#1修改文章底部带-号的标签" class="headerlink" title="1修改文章底部带#号的标签"></a>1修改文章底部带#号的标签</h2><p>将 # 换成标签图标。<br>[NexT 7.1.0 Released]修改方法为：<br>打开模板&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_macro&#x2F;post.swig，搜索 rel&#x3D;”tag”，进行如下修改：</p>
@@ -389,78 +499,6 @@
       </tags>
   </entry>
   <entry>
-    <title>typora编辑器的使用心得</title>
-    <url>/2022/07/09/typora%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
-    <content><![CDATA[<h2 id="1怎么添加分割线？"><a href="#1怎么添加分割线？" class="headerlink" title="1怎么添加分割线？"></a>1怎么添加分割线？</h2><span id="more"></span>
-
-<p>输入“—”，也就是三个减号</p>
-<p>按回车键后分割线就出现了</p>
-<h2 id="2字体加颜色"><a href="#2字体加颜色" class="headerlink" title="2字体加颜色"></a>2字体加颜色</h2><p>Typora本身并不支持选择颜色进行内容的设置，但可以使用其现有的功能实现对文本内容进行颜色的设置，此处以使用内联公式方式进行颜色字体的设置。</p>
-<p>文件-偏好设置，选择Markdown，勾选Markdown扩展语法下的内联公式，然后重启Typora.</p>
-<p>文本颜色设置公式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$\textcolor&#123;颜色名&#125;&#123;文字内容&#125; $</span><br></pre></td></tr></table></figure>
-
-<p>示例：绿色 - <code>$\textcolor&#123;green&#125;&#123;绿色的文字内容&#125; $</code>，效果如下:</p>
-<h2 id="3文字加链接"><a href="#3文字加链接" class="headerlink" title="3文字加链接"></a>3文字加链接</h2><p><code>[]</code>里写链接文字，<code>()</code>里写链接地址，<code>()</code>中的<code>&quot;&quot;</code>可以为链接指定 title 属性，title 属性可加可不加。title 属性的效果是鼠标悬停在链接上会出现的 title 文字。快捷键 Ctrl+K</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[链接文字](链接地址 &quot;链接标题&quot;)这样的形式。链接地址与链接标题前有一个空格，例如：</span><br><span class="line">欢迎来到[百度](https://www.baidu.com)</span><br></pre></td></tr></table></figure>
-
-<h2 id="4目录文字前有黑点方法"><a href="#4目录文字前有黑点方法" class="headerlink" title="4目录文字前有黑点方法"></a>4目录文字前有黑点方法</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">A 减号+空格，回车后自动出现下一个黑点</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>A</li>
-</ul>
-<h2 id="5标题居中使用标题标签"><a href="#5标题居中使用标题标签" class="headerlink" title="5标题居中使用标题标签"></a>5标题居中使用标题标签</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h1 align = &quot;center&quot;&gt;标题居中&lt;/h1&gt; </span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>影视软件推荐</title>
-    <url>/2022/07/07/%E5%BD%B1%E8%A7%86%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<h2 id="电视盒子TV"><a href="#电视盒子TV" class="headerlink" title="电视盒子TV"></a>电视盒子TV</h2><ul>
-<li><a href="https://wwn.lanzoul.com/b011t757g" title="水星TV">水星TV</a></li>
-<li><a href="https://wwn.lanzoul.com/i9Rkv082d15a" title="hdp">HDP直播</a></li>
-</ul>
-<span id="more"></span>
-
-<ul>
-<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
-<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
-<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
-</ul>
-<h2 id="安卓影视"><a href="#安卓影视" class="headerlink" title="安卓影视"></a>安卓影视</h2><ul>
-<li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
-<li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
-<li><a href="https://wwn.lanzoul.com/iFRoV083nv6h" title="花生">花生小站</a></li>
-<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
-<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
-<li><a href="https://wwn.lanzoul.com/iKg6208hgpob" title="喵影视">喵影视</a></li>
-</ul>
-<h2 id="网页端"><a href="#网页端" class="headerlink" title="网页端"></a>网页端</h2><ul>
-<li><a href="https://cupfox.app/" title="茶杯狐">茶杯狐</a></li>
-<li><a href="https://dsxys.com/" title="大师兄">大师兄影视</a></li>
-<li><a href="https://www.12wo.com/" title="动漫">12wo动漫网</a></li>
-<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
-</ul>
-<h2 id="苹果ios影视"><a href="#苹果ios影视" class="headerlink" title="苹果ios影视"></a>苹果ios影视</h2><ul>
-<li><a href="https://apps.apple.com/cn/app/id1582155663" title="花生">花生小站</a></li>
-<li><a href="https://tt58.tv/pc.html" title="图图">图图TV</a></li>
-<li><a href="https://www.tkys.tv/" title="天空">天空影视</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>安卓影视</category>
-      </categories>
-      <tags>
-        <tag>影视</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>苹果ios 伪装上架的影视APP合集</title>
     <url>/2022/07/27/%E8%8B%B9%E6%9E%9Cios-%E4%BC%AA%E8%A3%85%E4%B8%8A%E6%9E%B6%E7%9A%84%E5%BD%B1%E8%A7%86APP%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<h2 id="App-Store-伪装上架的影视APP合集"><a href="#App-Store-伪装上架的影视APP合集" class="headerlink" title="App Store 伪装上架的影视APP合集"></a>App Store 伪装上架的影视APP合集</h2><span id="more"></span>
@@ -502,44 +540,6 @@
       </categories>
       <tags>
         <tag>伪装</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>阿里云网盘token的提取和注入jar教程</title>
-    <url>/2022/07/05/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>阿里云网页版地址：<a href="https://www.aliyundrive.com/sign/in">https://www.aliyundrive.com/sign/in</a></p>
-<p>用电脑操作复制地址打开登录</p>
-<p>按F12就出现下面的图了</p>
-<p>图小的自己用鼠标拉伸一下</p>
-<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640.png" alt="img"></p>
-<span id="more"></span>
-
-<p>按图找到你的token</p>
-<p>token自己保管好相当于你家的钥匙</p>
-<p>然后新建一个文本这个token码放到文本里</p>
-<p>上传到你的外链、本地服务器、服务器、github等等</p>
-<p>外链上传时最好加密一下，避免盗取</p>
-<p>最后生成一个连接</p>
-<p>转战手机</p>
-<p>用MT管理器打开你失效的jar文件</p>
-<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628281.png" alt="img"></p>
-<p><strong>用第一个打开方式打开classes.dex</strong></p>
-<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628292.jpeg" alt="img"></p>
-<p><strong>然后点搜索 搜索自己</strong></p>
-<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628303.jpeg" alt="img"></p>
-<p><strong>点开搜到的结果</strong></p>
-<p><img src="/../images/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BD%91%E7%9B%98token%E7%9A%84%E6%8F%90%E5%8F%96%E5%92%8C%E6%B3%A8%E5%85%A5jar%E6%95%99%E7%A8%8B/640-16570275628304.jpeg" alt="img"></p>
-<p><strong>把刚才自己弄得token连接放到这里就可以用了</strong></p>
-<p>**<br>**</p>
-<p><strong>教程结束</strong></p>
-<p>**<br>**</p>
-<p><strong>哪里不懂及时沟通</strong></p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>阿里云</tag>
       </tags>
   </entry>
 </search>
