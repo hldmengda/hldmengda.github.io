@@ -64,6 +64,135 @@
       </tags>
   </entry>
   <entry>
+    <title>WebStack-Hugo静态导航网站搭建闭坑教程</title>
+    <url>/2022/10/30/WebStack-Hugo%E9%9D%99%E6%80%81%E5%AF%BC%E8%88%AA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="WebStack-Hugo-网址导航搭建"><a href="#WebStack-Hugo-网址导航搭建" class="headerlink" title="WebStack-Hugo | 网址导航搭建"></a>WebStack-Hugo | 网址导航搭建</h2><p><strong>主题开源地址：</strong></p>
+<ul>
+<li><p>GitHub：<a href="https://github.com/shenweiyan/WebStack-Hugo">https://github.com/shenweiyan/WebStack-Hugo</a></p>
+</li>
+<li><p>码云(Gitee)：<a href="https://gitee.com/shenweiyan/WebStack-Hugo">https://gitee.com/shenweiyan/WebStack-Hugo</a></p>
+<span id="more"></span></li>
+</ul>
+<p>这是 Hugo 版 WebStack 主题。可以借助 Github Pages 或者 Coding 直接托管部署，无需服务器。</p>
+<p>本项目是基于纯静态的网址导航网站 <a href="https://github.com/WebStackPage/WebStackPage.github.io">webstack.cc</a> 制作的 <a href="https://gohugo.io/">Hugo</a> 主题，</p>
+<h1 id="Windows-下安装部署"><a href="#Windows-下安装部署" class="headerlink" title="Windows 下安装部署"></a>Windows 下安装部署</h1><p>本安装部署在 Windows 7 x64 上测试没问题，相关操作同样适用于 Windows 10，如有任何问题，欢迎留言或者微信与我联系。</p>
+<h2 id="第一，下载-Windows-版本的-hugo"><a href="#第一，下载-Windows-版本的-hugo" class="headerlink" title="第一，下载 Windows 版本的 hugo"></a>第一，下载 Windows 版本的 hugo</h2><p>下载链接：<a href="https://github.com/gohugoio/hugo/releases%EF%BC%8C%E5%9C%A8%E8%BF%99%E9%87%8C%E6%88%91%E4%BB%AC%E4%B8%8B%E8%BD%BD">https://github.com/gohugoio/hugo/releases，在这里我们下载</a> <a href="https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip">hugo_0.89.4_Windows-64bit.zip</a>。</p>
+<h2 id="第二，解压"><a href="#第二，解压" class="headerlink" title="第二，解压"></a>第二，解压</h2><p>我们把 <a href="https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip">hugo_0.89.4_Windows-64bit.zip</a> 下载到 F:\WebStack 目录下，然后解压到当前文件夹。</p>
+<h2 id="第三，看-hugo-安装是否安装成功"><a href="#第三，看-hugo-安装是否安装成功" class="headerlink" title="第三，看 hugo 安装是否安装成功"></a>第三，看 hugo 安装是否安装成功</h2><p><strong>温馨提示：</strong></p>
+<p>Windows 命令运行窗口中可以使用 Tab 进行命令行补全，例如你当前目录下有一个 WebStack-Hugo 目录，你在命令行窗口中输入一个 w 后按下 Tab 键，命令行就会自动出现 WebStack-Hugo！</p>
+<p>使用命令行补全，可以减少代码（或者文件名）的输入，方便快捷，又能减少错误！</p>
+<ol>
+<li><p>在 Windows 中使用 Win+R 打开“<strong>运行</strong>”对话框，在对话框中输入“<strong>cmd</strong>”，点击确认。</p>
+</li>
+<li><p>在 Windows 运行窗口，先切换盘符到 F 盘，然后进入 hugo 的解压缩目录（F:\WebStack），具体操作如下。</p>
+</li>
+<li><p>我们就将盘符切换为 F 盘；</p>
+</li>
+<li><p>接着输入 cd WebStack，回车，就进入了 F:\WebStack 目录；使用 ls 可以看到当前目录下的文件。</p>
+</li>
+<li><p>最后，输入 hugo.exe version，回车，如图所示，则代表安装成功。</p>
+</li>
+</ol>
+<h2 id="第四，下载-WebStack-Hugo"><a href="#第四，下载-WebStack-Hugo" class="headerlink" title="第四，下载 WebStack-Hugo"></a>第四，下载 WebStack-Hugo</h2><p>浏览器打开 <a href="https://github.com/shenweiyan/WebStack-Hugo%EF%BC%8C%E7%82%B9%E5%87%BB">https://github.com/shenweiyan/WebStack-Hugo，点击</a> Code 下的 <strong>“Download ZIP”<strong>，把 WebStack-hugo-main.zip 下载到刚才 hugo 解压缩的目录（</strong>F:\WebStack</strong>）。</p>
+<h2 id="第五，解压，重命名"><a href="#第五，解压，重命名" class="headerlink" title="第五，解压，重命名"></a>第五，解压，重命名</h2><p>把 WebStack-Hugo-main.zip 解压到当前目录。</p>
+<h2 id="第六，安装主题"><a href="#第六，安装主题" class="headerlink" title="第六，安装主题"></a>第六，安装主题</h2><p>首先，进入 <strong>F:\WebStack</strong> 目录；</p>
+<p>然后，创建一个 <strong>themes</strong> 的文件夹；</p>
+<p>接着，把解压后的 WebStack-Hugo 整个文件夹移动到 themes 中。</p>
+<p>第四，将 themes&#x2F;WebStack-Hugo&#x2F;exampleSite 目录下的所有文件复制到 hugo 站点根目录（即 F:\WebStack）。</p>
+<h2 id="第七，生成与预览站点"><a href="#第七，生成与预览站点" class="headerlink" title="第七，生成与预览站点"></a>第七，生成与预览站点</h2><p>在刚才已经打开的 Windows 命令运行窗口中，<strong>使用下面的命令执行 hugo server，启动站点。</strong></p>
+<p>最后，在浏览器中打开 <a href="http://127.0.0.1:1313/%EF%BC%8C%E5%8D%B3%E5%8F%AF%E7%9C%8B%E5%88%B0%E7%94%9F%E6%88%90%E7%9A%84%E7%AB%99%E7%82%B9%E3%80%82">http://127.0.0.1:1313/，即可看到生成的站点。</a></p>
+<p> Linux 下安装部署 </p>
+<p>安装完本 WebStack-Hugo 主题后，将 exampleSite 目录下的文件复制到 hugo 站点根目录，根据需要把 config.toml 的一些信息改成自己的，导航的网址信息可通过 data 目录下 webstack.yml 修改。</p>
+<p>具体执行步骤如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ mkdir /home/shenweiyan/mysite </span><br><span class="line">$ cd /home/shenweiyan/mysite</span><br><span class="line"></span><br><span class="line"># 安装 WebStack-Hugo 主题</span><br><span class="line">$ mkdir themes</span><br><span class="line">$ cd themes</span><br><span class="line">$ git clone https://github.com/shenweiyan/WebStack-Hugo.git</span><br><span class="line"></span><br><span class="line"># 将 exampleSite 目录下的文件复制到 hugo 站点根目录</span><br><span class="line">$ cd /home/shenweiyan/mysite</span><br><span class="line">$ cp -r themes/WebStack-Hugo/exampleSite/* ./</span><br><span class="line"></span><br><span class="line"># 启动 hugo 站点</span><br><span class="line">$ hugo server </span><br><span class="line"># 如果你知道你的公网 ip, 如下面的 132.76.230.31, 可以使用下面的方式执行 hugo server</span><br><span class="line">$ hugo server --baseUrl=132.76.230.31 --bind=0.0.0.0 </span><br></pre></td></tr></table></figure>
+
+<h1 id="使用说明与技巧"><a href="#使用说明与技巧" class="headerlink" title="使用说明与技巧"></a>使用说明与技巧</h1><p>这是一个开源的公益项目，你可以拿来制作自己的网址导航，也可以做与导航无关的网站。</p>
+<h2 id="调整头部搜索栏"><a href="#调整头部搜索栏" class="headerlink" title="调整头部搜索栏"></a>调整头部搜索栏</h2><p>头部搜索栏的默认位置可以通过下面的方法进行修改。</p>
+<ol>
+<li>直接修改 <strong>layouts&#x2F;partials&#x2F;content_search.html</strong>，调整对应部分的位置。</li>
+<li>调整默认的搜索（即点击”常用&#x2F;搜索&#x2F;工具 ….” 时下指箭头的指向），把对应的 id 添加到对应的 label 里面。</li>
+</ol>
+<h2 id="自定义头部导航"><a href="#自定义头部导航" class="headerlink" title="自定义头部导航"></a>自定义头部导航</h2><p><a href="https://github.com/shenweiyan/WebStack-Hugo">WebStack-Hugo</a> 把头部的导航菜单的各个信息集成在了 <strong>data&#x2F;header.yml</strong> 文件中，每个人可以根据自己的需要调整。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- item: 首页</span><br><span class="line">  icon: fa fa-home</span><br><span class="line">  link: &quot;./&quot;</span><br><span class="line"></span><br><span class="line">- item: 作者</span><br><span class="line">  icon: fa fa-book</span><br><span class="line">  link: https://www.yuque.com/shenweiyan</span><br><span class="line"></span><br><span class="line">- item: 配置</span><br><span class="line">  icon: fa fa-cog</span><br><span class="line">  link: &quot;&quot;</span><br><span class="line">  list:</span><br><span class="line">    - name: 源码</span><br><span class="line">      url: &quot;#&quot;</span><br><span class="line">    - name: 图标</span><br><span class="line">      url: &quot;#&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取网站图标"><a href="#获取网站图标" class="headerlink" title="获取网站图标"></a>获取网站图标</h2><p><a href="https://nav.bioitee.com/">Bio &amp; IT 网址导航</a>默认使用的是个人收集的网站图标，主要是查看网站源码、百度、谷歌等途径把对应导航的图标下载下来，这个方法比较原始繁琐，适合导航不是很多的情况。</p>
+<p>你也可以使用一为提供的的 <a href="https://www.iowen.cn/tag/favicon/">Favicon</a> 图标 <a href="https://www.iowen.cn/tag/api/">api</a>：<a href="https://api.iowen.cn/doc/favicon.html%E3%80%82">https://api.iowen.cn/doc/favicon.html。</a></p>
+<p><strong>接口地址：</strong><a href="https://api.iowen.cn/favicon">https://api.iowen.cn/favicon</a></p>
+<p><strong>返回格式：</strong>图片</p>
+<p><strong>请求方式：</strong>get</p>
+<p><strong>请求示例：</strong></p>
+<ul>
+<li><ul>
+<li><ul>
+<li><a href="https://api.iowen.cn/favicon/www.iowen.cn.png">https://api.iowen.cn/favicon/www.iowen.cn.png</a></li>
+<li><a href="https://api.iowen.cn/favicon/www.baidu.com.png">https://api.iowen.cn/favicon/www.baidu.com.png</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>请求参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>必填</th>
+<th>类型</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>url</td>
+<td>是</td>
+<td>string</td>
+<td>需要获取图标的URL地址，如：<a href="http://www.iowen.cn,确保url能够正常打开/">www.iowen.cn，确保URL能够正常打开</a> <strong>不需要 http(s):&#x2F;&#x2F; ，且结尾必须填 .png</strong></td>
+</tr>
+</tbody></table>
+<p><strong>返回参数说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+</tr>
+</tbody></table>
+<p><strong>返回示例：</strong>返回网址图标</p>
+<h1 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h1><ol>
+<li>日间模式与夜间模式切换时候，头部搜索栏的背景图片切换不够流畅（个人的 js 知识有限，在 footer.html 做了一些简单的调整来实现），如果你有更好的想法，欢迎 PR 或者交流。</li>
+</ol>
+<h1 id="感谢墙"><a href="#感谢墙" class="headerlink" title="感谢墙"></a>感谢墙</h1><p>本主题的部分代码参考了以下几个开源项目，特此感谢。</p>
+<ul>
+<li><a href="https://github.com/WebStackPage/WebStackPage.github.io">WebStackPage&#x2F;WebStackPage.github.io</a></li>
+<li><a href="https://github.com/liutongxu/liutongxu.github.io">liutongxu&#x2F;liutongxu.github.io</a></li>
+<li><a href="https://github.com/iplaycode/webstack-hugo">iplaycode&#x2F;webstack-hugo</a></li>
+</ul>
+<p>感谢 <a href="https://github.com/WebStackPage/WebStackPage.github.io">WebStack</a> 的作者 <a href="https://twitter.com/decohack">Viggo</a> 的肯定和<a href="https://twitter.com/decohack/status/1569188705478516738">推广宣传</a>。</p>
+<p>本文发表原网站<a href="https://www.yuque.com/shenweiyan/cookbook/webstack-hugo">https://www.yuque.com/shenweiyan/cookbook/webstack-hugo</a></p>
+<p>很多注意细节在原网站的评论区</p>
+<p>1win10环境下，执行hugo命令无法生成public文件夹，但本地可以运行，请问一下应该如何解决呢？</p>
+<p>解答：默认生成的静态文件是在 <strong>docs</strong> 文件夹下，如果你要生成 <strong>public</strong> 文件夹可以把 <strong>config.toml</strong> 中的<code>publishDir = &quot;docs&quot;</code>修改成 <code>publishDir = &quot;public&quot;</code>就可以了。</p>
+<p>2这个主题有后台吗？我想添加网站怎么添加？谢谢！</p>
+<p>解答：在 <strong>data&#x2F;webstack.yml</strong> 这个文件中添加就可以了~</p>
+<p>可以使用 <code>**hugo.exe -D**</code>来构建整个导航网站的静态页面，默认情况下，生成静态页面输出的内容位于 .&#x2F;public&#x2F; 目录中（可以通过 -d&#x2F;–destination 参数修改输出位置，或者在配置文件中设置 publishdir 参数）。</p>
+<p>静态页面生成后，把 .&#x2F;public&#x2F; 目录中的内容托管到 GitHub&#x2F;Coding&#x2F;Gitee，然后开启 Pages 服务就可以了~</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>WebStack</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>biu播放器改老接口适用新版本教程</title>
     <url>/2022/07/05/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<p>1.0.3优化版本，重点优化电视盒子端的兼容性问题，开发者说了只要不是太旧的盒子现在基本都可以正常使用了。</p>
