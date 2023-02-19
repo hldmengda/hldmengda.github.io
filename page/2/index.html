@@ -33,8 +33,6 @@
 
 <title>
     
-    标签: hexo |
-    
     大师兄资源网
 </title>
 
@@ -149,40 +147,87 @@
         <div class="container">
             <div class="row">
                 <main class="col-md-8 main-content ">
-                    <ol class="breadcrumb">
-    
-    <li>
-        hexo
-    </li>
-    
-    
-</ol>
+                    
+<div class="carousel">
+    <a href="https://dsx.pages.dev/" target="_blank">
+        <img src="/./img/head-img.png" alt="">
+    </a>
+</div>
+
+
+
 
 <article class="post">
+    
+    <div class="post-media">
+        <a href="/2022/07/05/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/">
+            <img class="img-ajax" src="/img/loading.gif" data-src="/../images/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/640.png" alt="biu播放器改老接口适用新版本教程">
+        </a>
+    </div>
     
     <div class="post-content">
         <div class="post-head home-post-head">
             <h1 class="post-title">
-                <a href="/2022/07/06/hexo-next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E9%97%AD%E5%9D%91%E6%95%99%E7%A8%8B/">
-                    hexo next主题美化闭坑教程</a>
+                <a href="/2022/07/05/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/">
+                    biu播放器改老接口适用新版本教程</a>
             </h1>
             <div class="post-meta"> &bull;
                 <time class="post-date" datetime="" title="">
-                    2022年07月06日
+                    2022年07月05日
                 </time>
             </div>
         </div>
         <p class="brief">
             
-            1修改文章底部带#号的标签将 # 换成标签图标。[NexT 7.1.0 Released]修改方法为：打开模板&amp;#x2F;themes&amp;#x2F;next&amp;#x2F;layout&amp;#x2F;_macro&amp;#x2F;post.swig，搜索 rel&amp;#x3D;”tag”，进行如下修改：
-修改前
-12345&amp;lt;div class=&amp;quot;post-tags&amp;quot;&amp;gt;            &amp;#123;%- for tag in post.tags.toArray() %&amp;#125;              &amp;lt;a href=&amp;quot;&amp;#123;&amp;#123; url_for(tag.path) &amp;#125;&amp;#125;&amp;quot; rel=&amp;quot;tag&amp;quot;&amp;gt;&amp;#123;&amp;#123; tag_indicate &amp;#125;&amp;#125; &amp;#123;&amp;#123; tag.name &amp;#125;&amp;#125;&amp;lt;/a&amp;gt;            &amp;#123;%- endfor %&amp;#125;          &amp;lt;/div&amp;gt;…
+            1.0.3优化版本，重点优化电视盒子端的兼容性问题，开发者说了只要不是太旧的盒子现在基本都可以正常使用了。
+新增加了检测解析跳出舞蹈的视频会自动切换到下一个解析。现在不会再出现一些乱七八糟的视频了，使用体验更好！
+还有现在直播模块可以直接读取常规的这种格式的直播源了：
+XX频道,#genre#
+另外说一下老的全局接口如何快速改造成新版接口：
+
+把上图旧接口的这个Home字段的地方，
+替换成下方新版的Home字段就ok了！注意替换要完整，不要少了,号或者多了,啥的。…
             
         </p>
     </div>
+    
+    <footer class="post-footer clearfix">
+        <div class="pull-left tag-list">
+            <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-none-link" href="/tags/%E6%8E%A5%E5%8F%A3/" rel="tag">接口</a>
+            
+        </span>
+    </span>
+    
+    
+</div>
+        </div>
+        <div class="post-permalink">
+            <a href="/2022/07/05/biu%E6%92%AD%E6%94%BE%E5%99%A8%E6%94%B9%E8%80%81%E6%8E%A5%E5%8F%A3%E9%80%82%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E6%95%99%E7%A8%8B/" class="btn btn-default">
+                阅读全文</a>
+        </div>
+    </footer>
+    
 </article>
 
 
+
+<nav class="pagination" role="navigation">
+    <div id="page-nav">
+        <a class="extend prev" rel="prev" href="/"><i class='fa fa-angle-left'></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </div>
+</nav>
 
                 </main>
                 
