@@ -207,7 +207,7 @@ Typora + PicGo + B2 Cloud Storage 实现个人免费图床教程B2设置首先�
 <p><img src="https://f004.backblazeb2.com/file/image-oto-g/image-20230101155301043.png" alt="image-20230101155301043"></p>
 <h4 id="Typora设置"><a href="#Typora设置" class="headerlink" title="Typora设置"></a>Typora设置</h4><p>打开Typora，选择左上角文件，点击偏好设置。</p>
 <p><img src="https://f005.backblazeb2.com/file/dsxhkj/image-20230101134112512.png" alt="image-20230101134112512"></p>
-<h2 id="注意一定按流程走"><a href="#注意一定按流程走" class="headerlink" title="注意一定按流程走"></a>注意一定按流程走</h2><p>点击图片，在插入图片时选择上传图片，在上传服务设定中选择PicGo-Core (command line)，并选择下载，下载成功后，如为Win系统即可在<code>C:\Users\&#123;当前用户名&#125;\AppData\Roaming\Typora\picgo\win64</code>下找到picgo（路径中AppData为隐藏文件夹，需要设置显示隐藏文件夹才能看到）</p>
+<h4 id="注意一定按流程走"><a href="#注意一定按流程走" class="headerlink" title="注意一定按流程走"></a>注意一定按流程走</h4><p>点击图片，在插入图片时选择上传图片，在上传服务设定中选择PicGo-Core (command line)，并选择下载，下载成功后，如为Win系统即可在<code>C:\Users\&#123;当前用户名&#125;\AppData\Roaming\Typora\picgo\win64</code>下找到picgo（路径中AppData为隐藏文件夹，需要设置显示隐藏文件夹才能看到）</p>
 <p><img src="https://f005.backblazeb2.com/file/dsxhkj/image-20230222155901071.png" alt="image-20230222155901071"></p>
 <p><img src="https://f004.backblazeb2.com/file/image-oto-g/image-20230101134736393.png" alt="image-20230101134736393"></p>
 <h4 id="PicGo设置"><a href="#PicGo设置" class="headerlink" title="PicGo设置"></a>PicGo设置</h4><p>接着打开cmd命令，cd到picgo的目录下，</p>
@@ -215,6 +215,7 @@ Typora + PicGo + B2 Cloud Storage 实现个人免费图床教程B2设置首先�
 <p>输入<code>picgo.exe install b2</code>，安装成功后再输入<code>picgo.exe use uploader</code>，用向下的方向键，选择<code>b2</code>。</p>
 <p>再输入<code>picgo.exe set uploader b2</code>，这将初始化设置插件，根据提示，将刚刚在[B2设置])里获得的Application Key ID和Application Key填入即可。</p>
 <p>好了，这就完成了所有配置，现在可以开始使用B2作为个人图床了，赶紧复制一张图到Typora里试试吧！</p>
+<h4 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h4><p>该插件是为命令行版 Picgo 开发（理论上对有 UI 版 PicGo 同样支持），上面的流程都是按照命令版本走的，按照流程操作就行，不用下载picgo电脑桌面版的。</p>
 <h3 id="友情提醒"><a href="#友情提醒" class="headerlink" title="友情提醒"></a>友情提醒</h3><p>由于B2 API的设计，上传图片所使用的凭证是动态生成的（每24小时），所以该插件在初次使用，以及距离上次使用超过24小时时，会上传较慢（共需要发送三个请求）。</p>
 <p>可以通过浏览picgo的<code>config.json</code>以了解当前API令牌的状态，<code>config.json</code>文件在<code>C:\Users\&#123;当前用户名&#125;\.picgo</code>文件夹中。</p>
 <p>在原博主的内容上加上了自己搭建时不容易发现的地方，小白看了更容易搭建。</p>
@@ -254,6 +255,12 @@ Typora + PicGo + B2 Cloud Storage 实现个人免费图床教程B2设置首先�
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
+    <a href="/2023/04/02/hexo%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A8%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/" class="pre-post btn btn-default" title='hexo史上最全搭建教程'>
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            hexo史上最全搭建教程</span>
+    </a>
+    
     
     <a href="/2023/02/21/TVBox%E6%8E%A5%E5%8F%A3%E6%94%B6%E9%9B%86/" class="next-post btn btn-default" title='TVBox接口收集'>
         <span class="hidden-lg">下一篇</span>
@@ -268,7 +275,7 @@ Typora + PicGo + B2 Cloud Storage 实现个人免费图床教程B2设置首先�
     
 <div id="vcomments" class="valine"></div>
 
-<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/valine@1.3.4/dist/Valine.min.js"></script>
 
 <script>
     window.onload=function(){
@@ -302,7 +309,7 @@ Typora + PicGo + B2 Cloud Storage 实现个人免费图床教程B2设置首先�
             文章目录
         </h3>
         
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Typora-PicGo-B2-Cloud-Storage-%E5%AE%9E%E7%8E%B0%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A"><span class="toc-text">Typora + PicGo + B2 Cloud Storage 实现个人免费图床</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%99%E7%A8%8B"><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#B2%E8%AE%BE%E7%BD%AE"><span class="toc-text">B2设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Typora%E8%AE%BE%E7%BD%AE"><span class="toc-text">Typora设置</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%B8%80%E5%AE%9A%E6%8C%89%E6%B5%81%E7%A8%8B%E8%B5%B0"><span class="toc-text">注意一定按流程走</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PicGo%E8%AE%BE%E7%BD%AE"><span class="toc-text">PicGo设置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8B%E6%83%85%E6%8F%90%E9%86%92"><span class="toc-text">友情提醒</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Typora-PicGo-B2-Cloud-Storage-%E5%AE%9E%E7%8E%B0%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A"><span class="toc-text">Typora + PicGo + B2 Cloud Storage 实现个人免费图床</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%99%E7%A8%8B"><span class="toc-text">教程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#B2%E8%AE%BE%E7%BD%AE"><span class="toc-text">B2设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Typora%E8%AE%BE%E7%BD%AE"><span class="toc-text">Typora设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%B8%80%E5%AE%9A%E6%8C%89%E6%B5%81%E7%A8%8B%E8%B5%B0"><span class="toc-text">注意一定按流程走</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PicGo%E8%AE%BE%E7%BD%AE"><span class="toc-text">PicGo设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E"><span class="toc-text">补充说明</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8B%E6%83%85%E6%8F%90%E9%86%92"><span class="toc-text">友情提醒</span></a></li></ol>
         
     </div>
 </aside>
